@@ -1,0 +1,79 @@
+<link rel="stylesheet" href="/stylesheets/homepage.css" />
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Careerfind</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Jobs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Companies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sign-in</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            Employer
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="head">
+  <h1>Find your dream job now..</h1>
+
+  <h2>5 lakh+ jobs to explore</h2>
+</div>
+<div class="search">
+  <input type="text" placeholder="Enter skills/companies       | Enter location" />
+  <button>search</button>
+</div>
+<div class="section3">
+  <h3>Sponsored Companies</h3>
+  <button>All</button>
+  <button>IT Services</button>
+  <button>Technology</button>
+</div>
+
+
+
+</div>
+<h2>Jobs</h2>
+<div class="container">
+  <div class="row">
+    {{#each allJob}}
+    <div class="col-3">
+      <div class="card" style="width: 18rem">
+        <img src="https://wallpaperaccess.com/full/5570.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{Job_Title}}</h5>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up
+            the bulk of the card's content.
+          </p>
+          <a href="#" class="btn btn-danger">Apply</a>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+  </div>

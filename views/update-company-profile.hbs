@@ -1,0 +1,70 @@
+<!DOCTYPEhtml>
+  <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/companyprofile.css">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="row g-3">
+        <div class="card p-5 mt-5">
+
+          <h1>Company Profile</h1>
+          <form action="/employer/update-company-profile/{{id}}" method="post">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Bio</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="bio"></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="formFile" class="form-label">image</label>
+              <input class="form-control" type="file" name="company_image" id="formFile">
+            </div>
+
+
+
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">link</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="" name="link">
+            </div>
+
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Established</label>
+              <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="" name="established">
+            </div>
+
+            <fieldset class="row mb-3">
+              <legend class="col-form-label col-4 col-sm-2 pt-0">Sector</legend>
+              <div class="col-2">
+
+                <input class="form-check-input" type="radio" name="sector" id="gridRadios1" value="option1">
+                <label class="form-check-label" for="gridRadios1">
+                  Public
+                </label>
+              </div>
+              <div class="col-4">
+                <input class="form-check-input" type="radio" name="sector" id="gridRadios2" value="option2">
+                <label class="form-check-label" for="gridRadios2">
+                  Private
+                </label>
+
+              </div>
+            </fieldset>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+  </html>
